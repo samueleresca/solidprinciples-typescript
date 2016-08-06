@@ -1,0 +1,2 @@
+c:\users\samueler\documents\visual studio 2015\Projects\blog-solid-typescript\blog-solid-typescript\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\samueler\documents\visual studio 2015\Projects\blog-solid-typescript\blog-solid-typescript\obj\Debug\blog-solid-typescript.njsprojResolveAssemblyReference.cache

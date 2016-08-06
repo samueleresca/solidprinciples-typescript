@@ -1,0 +1,9 @@
+{
+  "name": "blog-solid-typescript",
+  "version": "0.0.0",
+  "description": "blog-solid-typescript",
+  "main": "app.js",
+  "author": {
+    "name": "samueler"
+  }
+}
