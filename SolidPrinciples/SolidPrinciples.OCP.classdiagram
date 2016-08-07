@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e2d5303f-4ef4-49c8-9c12-57377b10a41e" name="SolidPrinciples.OCP" linkedPackageId="f5e53be7-6042-4c7d-a263-dd59ee77c91a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="448d05ef-0e5e-4e6a-adf7-a8c973c6dcf9">
+      <profileInstance Id="d77dd493-3ea0-47a5-b282-8267b1dd2551" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="db78cf7c-1fd5-4f4c-9632-4e51bfe9c50f">
+      <profileInstance Id="a20952d0-cdbe-43f3-a66d-312482733491" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2acd9276-f4dc-4b07-9cee-15968d618c7e" name="CreditCard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3701b6d0-c590-4d5a-99eb-997e88095396" />
+        <ownedAttributesInternal>
+          <property Id="a91e5302-d47a-4c05-af4a-4f2ffea2e87f" name="Expiration" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7b7ca9b-17a6-4db7-b260-d4924cc285ab" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4d22a866-f0ef-4821-b6b3-cd26e164f7a9" LastKnownName="Date" />
+            </type_NamedElement>
+          </property>
+          <property Id="c9555b1f-a4ab-4a97-8ca0-616f09bbb5f5" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cf462aa8-8d80-448e-b120-6fb5a6e9cf51" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="01e85032-4aa5-424a-ab8c-2f4ca359efb1" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="21ef0b76-c35e-43b5-8808-9340efe47119" name="MonthlyCost" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="abed95fb-f770-4387-9299-18c1d1c4a0aa" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3c0d794-1483-4ba5-b698-c80a457f9ef2" LastKnownName="number" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c0e3439d-547a-44b9-9018-91f3f4415118" name="constructor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dedc9064-26f4-48fb-b2f9-0bf4eb027c92" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="65c0ae7f-4728-43a3-9dd5-71b653e483a3" name="code" direction="In" isUnique="false">
+                  <elementDefinition Id="19b9420f-6e69-48aa-9f34-60a8fbbecccc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01e85032-4aa5-424a-ab8c-2f4ca359efb1" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="376f36b1-02ed-4455-9aaa-2beb51f40b85" name="Expiration" direction="In" isUnique="false">
+                  <elementDefinition Id="210f734f-ba0a-4b43-b361-6abc17461207" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4d22a866-f0ef-4821-b6b3-cd26e164f7a9" LastKnownName="Date" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="06649ca9-c461-4eaf-9571-79e94435e1e2" name="MonthlyCost" direction="In" isUnique="false">
+                  <elementDefinition Id="7a9f77b6-aeee-4e4f-aa69-325e136e0227" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="34b688f6-f9d1-4d90-b553-6962d2d4a766" LastKnownName="Number" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8454590b-eaaa-4d88-a740-36355355e76b" direction="Return" isUnique="false">
+                  <elementDefinition Id="9a74694f-36d6-49f3-acea-535605c92b13" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a44b0cf9-bb7f-4354-905b-7e8453e93c2e" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b4af6f47-2ccc-4d27-a1c3-a52669aa6221" name="getCode" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c480730b-ae28-45da-b950-47ac96257d98" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c27aeb3d-0510-4e71-a371-0f8657e84f7d" direction="Return" isUnique="false">
+                  <elementDefinition Id="0f1b14f7-4f8e-484e-aef5-4581f02f2d43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01e85032-4aa5-424a-ab8c-2f4ca359efb1" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7ea62198-a5f2-46fe-9377-0c14d8fb9b6d" name="getExpiration" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="108b18ea-2d16-4dc4-8729-0645dc287a3a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0afcc601-40df-45f1-8b53-8b2bbbaf30be" direction="Return" isUnique="false">
+                  <elementDefinition Id="884656fa-04d0-4477-b2b5-e37290108ea8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4d22a866-f0ef-4821-b6b3-cd26e164f7a9" LastKnownName="Date" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6ff25867-d276-4f37-b255-4cab343d61f6" name="getDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3e340f8f-3ef3-4f80-a89a-d1e89b6c4925" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d3a366b9-61b6-4b11-8bff-db6afcf39e20" direction="Return" isUnique="false">
+                  <elementDefinition Id="8a184a98-97da-4e7b-84fc-0ec956f8cac3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3c0d794-1483-4ba5-b698-c80a457f9ef2" LastKnownName="number" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="01e85032-4aa5-424a-ab8c-2f4ca359efb1" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4d22a866-f0ef-4821-b6b3-cd26e164f7a9" name="Date" isAbstract="false" isLeaf="false" cachedFullName="Date">
+        <elementDefinition Id="dd8589d4-6501-4b8d-ac96-4d4c005942bf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f3c0d794-1483-4ba5-b698-c80a457f9ef2" name="number" isAbstract="false" isLeaf="false" cachedFullName="number">
+        <elementDefinition Id="b5d5a481-cb90-4764-824e-5753b0d78efd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="34b688f6-f9d1-4d90-b553-6962d2d4a766" name="Number" isAbstract="false" isLeaf="false" cachedFullName="Number">
+        <elementDefinition Id="be039cb7-dbd8-46e9-a6d2-e1b87bc7e5ab" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a44b0cf9-bb7f-4354-905b-7e8453e93c2e" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="8383d065-c365-414f-a719-ea48f6b47811" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="869e2672-6ba5-493f-82f0-b4ee2cfe991d" name="SilverCreditCard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7941774d-6452-4f86-a65c-d553a69c7ab4" />
+        <generalsInternal>
+          <generalization Id="cf8591c3-924c-4bb7-92cf-63a088529f1b" isSubstitutable="false">
+            <classMoniker Id="2acd9276-f4dc-4b07-9cee-15968d618c7e" LastKnownName="CreditCard" />
+            <elementDefinition Id="4e230069-9ef5-4c90-886e-e0bc69e80d24" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="fca12baf-1bc5-4798-bf60-de071f9ad228" name="getDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="918eff98-8eab-4a19-aac3-84f22ff41125" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="98ae92c1-ca50-477c-8397-2cd3529aaf85" direction="Return" isUnique="false">
+                  <elementDefinition Id="b1ee68ec-5186-4160-98b8-a153c554ea8a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f3c0d794-1483-4ba5-b698-c80a457f9ef2" LastKnownName="number" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="913756fd-2b66-445a-9b2e-b18317735cba" name="number" isAbstract="false" isLeaf="false" cachedFullName="number">
+        <elementDefinition Id="b5d5a481-cb90-4764-824e-5753b0d78efd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f6ebefbf-6505-4738-8718-263c378820b0" name="GoldCreditCard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="618361a2-5d80-4fed-95ac-ea4c2a4eb8bb" />
+        <generalsInternal>
+          <generalization Id="17d469ce-4c24-449f-b658-b2cf08034c8f" isSubstitutable="false">
+            <classMoniker Id="2acd9276-f4dc-4b07-9cee-15968d618c7e" LastKnownName="CreditCard" />
+            <elementDefinition Id="925d4edf-1d10-4cf1-9629-e5e5b907bce1" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="7a58f3ac-c675-4ad7-a75e-d426e566f775" name="getDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="24b15e98-4d53-4648-b3b7-cebcee37ad2e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="07f2eb9d-193d-4f32-bbc8-7b97f8efd746" direction="Return" isUnique="false">
+                  <elementDefinition Id="59b361c7-dddb-4811-bf66-3beddf53eb6c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="913756fd-2b66-445a-9b2e-b18317735cba" LastKnownName="number" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f5e53be7-6042-4c7d-a263-dd59ee77c91a" name="SolidPrinciples">
+    <elementDefinition Id="8a85c5bc-e464-4f7a-8040-81dae3cc501e" />
+  </package>
+</logicalClassDesignerModel>

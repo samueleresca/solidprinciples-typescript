@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SolidPrinciples.OCP">
+  <logicalClassDesignerModelMoniker Id="e2d5303f-4ef4-49c8-9c12-57377b10a41e" />
+  <nestedChildShapes>
+    <classShape Id="d4424e70-d4d8-4211-af8b-465c7b37b17f" absoluteBounds="1.875, 1.25, 4.25, 2.0234374503294634" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="2acd9276-f4dc-4b07-9cee-15968d618c7e" LastKnownName="CreditCard" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="21418fb0-6d7a-4e36-a7c0-3e54ddae06ab" absoluteBounds="1.89, 1.6400000000000001, 4.2200000000000006, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9f7ff1a8-4a62-4c61-9102-99358ba47087" absoluteBounds="1.89, 2.3316406026482586, 4.2200000000000006, 0.84179684768120455" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38e48146-777d-401e-9ca4-a63928166974" absoluteBounds="1.875, 4.25, 1.5, 1.0624999801317854" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="869e2672-6ba5-493f-82f0-b4ee2cfe991d" LastKnownName="SilverCreditCard" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="dc0a87d3-f50b-4318-a6f6-6d50f7afa015" absoluteBounds="1.8900000000000001, 4.64, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="d5bd4df4-f137-4d79-bef2-afc49b5359d2" absoluteBounds="1.8900000000000001, 4.85117186754942, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(2.625 : 4.25); (2.625 : 3.64843745032946); (4 : 3.64843745032946); (4 : 3.27343745032946)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="cf8591c3-924c-4bb7-92cf-63a088529f1b" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="38e48146-777d-401e-9ca4-a63928166974" />
+        <classShapeMoniker Id="d4424e70-d4d8-4211-af8b-465c7b37b17f" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="c23167ee-df2d-49ec-a99f-3721100bb7dd" absoluteBounds="4.5, 4.25, 1.5, 1.0624999801317854" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="f6ebefbf-6505-4738-8718-263c378820b0" LastKnownName="GoldCreditCard" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="ed68cd35-5d88-4b37-8d09-cff25f187c20" absoluteBounds="4.515, 4.64, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="85cad53a-8cf6-4a80-a69b-e2d26ee6d80c" absoluteBounds="4.515, 4.85117186754942, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(5.25 : 4.25); (5.25 : 3.64843745032946); (4 : 3.64843745032946); (4 : 3.27343745032946)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="17d469ce-4c24-449f-b658-b2cf08034c8f" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="c23167ee-df2d-49ec-a99f-3721100bb7dd" />
+        <classShapeMoniker Id="d4424e70-d4d8-4211-af8b-465c7b37b17f" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
