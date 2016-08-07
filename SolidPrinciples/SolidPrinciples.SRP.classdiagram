@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="304ba671-557d-4047-8b1b-cd53bb27a68d" name="SolidPrinciples.SRP" linkedPackageId="2168a201-4e4c-4072-99dd-6c84d597e284" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0a4ac180-588f-4571-85a3-ab36841820c6">
+      <profileInstance Id="cdd61a73-8560-48b0-ad9d-bd2a3e55d851" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8d3f9b07-9f0f-4a5b-bfb9-38b1d2910eed">
+      <profileInstance Id="0fd167fb-52c5-4e82-9e9a-b0873ffa8bac" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f4d0e4ba-ca43-4683-ac7e-c40867d097f9" name="Task" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4d9ea389-05c5-4e41-beed-e915286ea940" />
+        <ownedAttributesInternal>
+          <property Id="98949ccd-cc22-4a50-8849-f510f717fa9b" name="deadline" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ebad574f-ddcc-4a44-9bea-e1d083f49b1c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9077269b-82bc-4d46-afb0-ac61a845a335" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="d312eb5a-cbee-4f3f-a5e7-b2c6b42f559a" name="title" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="262bc4cb-6df3-4782-9b3a-215ff5138419" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9077269b-82bc-4d46-afb0-ac61a845a335" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b1456bc9-c889-4e48-881d-1d5d049f9800" name="Task" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b75ded6-c4d7-49bb-a164-ef6817344614" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="106964a4-ce93-411a-9688-e333939f5689" name="title" direction="In" isUnique="false">
+                  <elementDefinition Id="d5fc9558-230b-4dce-b94c-d1b6faffb843" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9077269b-82bc-4d46-afb0-ac61a845a335" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cdefc75a-321b-4982-9d4c-50aeae45f8a4" name="deadline" direction="In" isUnique="false">
+                  <elementDefinition Id="643c0505-da86-4fb5-a8be-ac7d5c057c8e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9077269b-82bc-4d46-afb0-ac61a845a335" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="772fd715-0f21-419a-abd2-e1429b4db62d" direction="Return" isUnique="false">
+                  <elementDefinition Id="6ac83aa7-ab3c-4ac0-a20c-d3820461d324" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e2b4018-9565-4fbc-98ca-1c9652bfd550" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b0d173bf-b7f0-498a-853a-d5f66d300afd" name="getTitle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84bd8628-c65a-4770-a12d-fd20a73865f7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3169cf50-0d64-4a91-96d3-2388e6e53dba" direction="Return" isUnique="false">
+                  <elementDefinition Id="9445028f-4ab6-48c4-b3a7-6bd707240005" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9077269b-82bc-4d46-afb0-ac61a845a335" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="23f7a809-3d3f-4853-8788-71f70e7d3714" name="TaskRepository" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="79fe72aa-bc22-4da8-a6cf-57f350d0eae9" />
+        <targetEnds>
+          <association Id="4b22e0ba-fcd3-4ca6-9faf-c15dd88f79c0" isDerived="false" sourceEndRoleName="TaskRepository" targetEndRoleName="Database" isLeaf="false" isAbstract="false">
+            <classMoniker Id="16a4424e-07cd-4aaf-936b-ae3858051a6a" LastKnownName="Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85fd6d79-32cb-4afb-85d3-d340c876bfe1" name="TaskRepository" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69dba852-4db8-4cd7-8a54-4f4306e8f4a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="454adf66-6b1c-4736-bb11-a2289006f269" name="Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="27e81f4d-3b46-47fe-90ea-6743b50d71db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dd5e9d60-8224-4422-becf-35272bf2e0f7" />
+          </association>
+          <association Id="b2ca850c-d3f3-4c6f-97bc-f1504cfc03ac" isDerived="false" sourceEndRoleName="TaskRepository" targetEndRoleName="Task" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f4d0e4ba-ca43-4683-ac7e-c40867d097f9" LastKnownName="Task" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6721ba5e-f150-45b2-ac41-4d338ec851e6" name="TaskRepository" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2d734799-96ad-41d2-a0fc-83e87a56dcc2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd087e1a-f272-479a-8c60-5f5536cb9cdb" name="Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb39bc7b-eb2e-49c5-b590-bb73e8480350" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9899fdcf-9ad6-4d1b-a741-e2f50abfd53c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="42e695e3-1b32-44f5-8293-519e67ed8be7" name="db" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94c41713-4e31-4f2d-b151-d5489318b117" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="36f50740-c660-41d9-9bd5-68747a1db341" LastKnownName="Database" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="412b754e-0a07-488a-b571-23b98bac0ba4" name="TaskRepository" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4f5c75b9-da5c-4cd3-816c-92dc197babbf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8c6d6186-c3e1-41f8-bce5-999e793051cc" direction="Return" isUnique="false">
+                  <elementDefinition Id="5eed69c3-de39-4724-95c1-0afe2e60c3dd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e2b4018-9565-4fbc-98ca-1c9652bfd550" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4f1b3ccc-6487-410b-97ae-e42a16ad2097" name="save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b09e1cfd-0bb4-406c-866c-6c6369508ebf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="954ab57e-e19b-4dc1-9848-57e753a2efd2" name="task" direction="In" isUnique="false">
+                  <elementDefinition Id="5ffb75e2-7bfe-43ac-9e69-ba72aa28eb14" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="55b6c1c8-f559-4092-9b5b-3d7547a30280" LastKnownName="Task" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="092b27bb-113c-4e13-a0ce-c452cd66d90c" direction="Return" isUnique="false">
+                  <elementDefinition Id="7d7568dc-af62-431b-9d54-66df4306286a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e2b4018-9565-4fbc-98ca-1c9652bfd550" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="9077269b-82bc-4d46-afb0-ac61a845a335" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3e2b4018-9565-4fbc-98ca-1c9652bfd550" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="8383d065-c365-414f-a719-ea48f6b47811" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="36f50740-c660-41d9-9bd5-68747a1db341" name="Database" isAbstract="false" isLeaf="false" cachedFullName="Database">
+        <elementDefinition Id="f2b3ea5a-6b8b-4ad9-9124-026c2c429968" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="55b6c1c8-f559-4092-9b5b-3d7547a30280" name="Task" isAbstract="false" isLeaf="false" cachedFullName="SolidPrinciples::Task">
+        <elementDefinition Id="4d9ea389-05c5-4e41-beed-e915286ea940" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8fade182-d0dd-4cf4-9daa-10400ddb86e0" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5bf49a9e-90c4-4947-9a69-2ae5006dca1c" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="8383d065-c365-414f-a719-ea48f6b47811" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6a0c3f79-1000-4f56-9df6-96b2f7f65c63" name="Task" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8cf19751-0a01-4154-8560-f3c8d48d7d4c" />
+        <targetEnds>
+          <association Id="80967942-d84c-4c85-9547-7faa7c343dd8" isDerived="false" sourceEndRoleName="Task" targetEndRoleName="Database" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3e836946-373c-498c-8469-eaf34bac9274" LastKnownName="Database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6de8dd35-97c4-4db1-aedd-f08543d752cc" name="Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c776607d-bdf2-4c2a-a0db-57fdf01db107" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="896d727c-0c13-4112-903a-18c9ded74430" name="Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="69f5327a-d61a-4f7d-bc2e-33c005a9ccd9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55902f27-2ba3-4ef9-8959-e82c9949a121" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="18bc5cbb-fa6e-4db9-9c80-02884bba0d08" name="deadline" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="62a21505-75df-4707-b3f0-cff8bb69e1d4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8fade182-d0dd-4cf4-9daa-10400ddb86e0" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="53e69aed-1bb0-4b36-bb92-8e6fa23f950b" name="title" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fcd54582-c9ae-4934-ba80-8ee269a2b3ca" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8fade182-d0dd-4cf4-9daa-10400ddb86e0" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="9ceb678b-6977-4560-b720-20411a57746e" name="db" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f96a0e0c-c4b9-4be5-a786-18531445fca0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="36f50740-c660-41d9-9bd5-68747a1db341" LastKnownName="Database" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0e1ec7fc-6d63-40e5-99c1-47955f87b980" name="Task" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18c13758-7309-4a57-b3df-8e88f17d8465" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a26747b9-33b7-4603-a923-1f6595374d26" name="title" direction="In" isUnique="false">
+                  <elementDefinition Id="20abb7ea-c5fb-43d5-815d-11f6486661b8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8fade182-d0dd-4cf4-9daa-10400ddb86e0" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3d26759c-72e0-4bad-86c6-c56e0b7b0cb1" name="deadline" direction="In" isUnique="false">
+                  <elementDefinition Id="ab771975-9584-40b2-976d-e4a9ae386076" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8fade182-d0dd-4cf4-9daa-10400ddb86e0" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2e8039d4-ec17-4fa7-8e33-8b66836e28de" direction="Return" isUnique="false">
+                  <elementDefinition Id="8164634b-38cb-4f40-8f01-de379f23a751" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5bf49a9e-90c4-4947-9a69-2ae5006dca1c" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ad0b5441-3bc8-444a-86fa-9137cde43431" name="getTitle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea26ab53-d8eb-4da2-aa9e-e659a0342866" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="183f664f-a540-4491-ae54-315892c4b689" direction="Return" isUnique="false">
+                  <elementDefinition Id="1910acbe-27fa-4d2a-9f46-85d6dafbe2a4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8fade182-d0dd-4cf4-9daa-10400ddb86e0" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ab0eb34f-1288-4389-aef3-c5903076ae37" name="save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7ea0b6c7-1959-4906-beb9-0e51111ba8bc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="49223eba-cfbf-4a54-95ef-e3b079c484d1" direction="Return" isUnique="false">
+                  <elementDefinition Id="91283329-7c75-43fe-8f44-dadde43f24c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e2b4018-9565-4fbc-98ca-1c9652bfd550" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3e836946-373c-498c-8469-eaf34bac9274" name="Database" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f9593ac-3102-4cac-aae7-c8dbc655bc20" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="16a4424e-07cd-4aaf-936b-ae3858051a6a" name="Database" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3334c7fa-e530-4d25-addb-86884dbbcbb6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="2168a201-4e4c-4072-99dd-6c84d597e284" name="SolidPrinciples">
+    <elementDefinition Id="8a85c5bc-e464-4f7a-8040-81dae3cc501e" />
+  </package>
+</logicalClassDesignerModel>
