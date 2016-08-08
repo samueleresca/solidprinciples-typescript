@@ -17,7 +17,7 @@
         return this.Expiration;
     }
 
-    getDiscount(): number {
+    monthlyDiscount(): number {
         return this.MonthlyCost * 0.02;
     }
 
@@ -27,7 +27,7 @@
 
 class GoldCreditCard extends CreditCard {
 
-    getDiscount(): number {
+    monthlyDiscount(): number {
         return this.MonthlyCost * 0.05;
     }
 }
@@ -35,7 +35,7 @@ class GoldCreditCard extends CreditCard {
 
 class SilverCreditCard extends CreditCard {
 
-    getDiscount(): number {
+    monthlyDiscount(): number {
         return this.MonthlyCost * 0.03;
     }
 }

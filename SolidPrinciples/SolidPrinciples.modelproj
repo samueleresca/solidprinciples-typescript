@@ -36,6 +36,13 @@
       <SubType>Content</SubType>
       <DependentUpon>SolidPrinciples.SRP.classdiagram</DependentUpon>
     </Content>
+    <Content Include="SolidPrinciplesLSP.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SolidPrinciplesLSP.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SolidPrinciplesLSP.classdiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\SolidPrinciples.uml">
       <SubType>Content</SubType>

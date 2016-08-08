@@ -13,21 +13,23 @@
 //        this.db.tasks.save({ title: this.title, date: this.deadline });
 //    }
 //}
-class Task {
-    constructor(title, deadline) {
+var Task = (function () {
+    function Task(title, deadline) {
         this.title = title;
         this.deadline = deadline;
     }
-    getTitle() {
+    Task.prototype.getTitle = function () {
         return this.title + "(" + this.deadline + ")";
-    }
-}
-class TaskRepository {
-    constructor() {
+    };
+    return Task;
+}());
+var TaskRepository = (function () {
+    function TaskRepository() {
         this.db = Database.connect("admin:password@fakedb", ["tasks"]);
     }
-    save(task) {
+    TaskRepository.prototype.save = function (task) {
         this.db.tasks.save(JSON.stringify(task));
-    }
-}
+    };
+    return TaskRepository;
+}());
 //# sourceMappingURL=Task.js.map

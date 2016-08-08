@@ -24,14 +24,14 @@
         <classShapeMoniker Id="d4424e70-d4d8-4211-af8b-465c7b37b17f" />
       </nodes>
     </generalizationConnector>
-    <classShape Id="c23167ee-df2d-49ec-a99f-3721100bb7dd" absoluteBounds="4.5, 4.25, 1.5, 1.0624999801317854" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="c23167ee-df2d-49ec-a99f-3721100bb7dd" absoluteBounds="4.625, 4.25, 1.5, 1.0624999801317854" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="f6ebefbf-6505-4738-8718-263c378820b0" LastKnownName="GoldCreditCard" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="ed68cd35-5d88-4b37-8d09-cff25f187c20" absoluteBounds="4.515, 4.64, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="85cad53a-8cf6-4a80-a69b-e2d26ee6d80c" absoluteBounds="4.515, 4.85117186754942, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="ed68cd35-5d88-4b37-8d09-cff25f187c20" absoluteBounds="4.64, 4.64, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="85cad53a-8cf6-4a80-a69b-e2d26ee6d80c" absoluteBounds="4.64, 4.85117186754942, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <generalizationConnector edgePoints="[(5.25 : 4.25); (5.25 : 3.64843745032946); (4 : 3.64843745032946); (4 : 3.27343745032946)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(5.375 : 4.25); (5.375 : 3.64843745032946); (4 : 3.64843745032946); (4 : 3.27343745032946)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="17d469ce-4c24-449f-b658-b2cf08034c8f" />
       <relativeChildShapes />
       <nodes>

@@ -37,6 +37,7 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
+    <TypeScriptCompile Include="SolidPrinciples\LSP\PostalAddress.ts" />
     <TypeScriptCompile Include="SolidPrinciples\OCP\CreditCard.ts" />
     <TypeScriptCompile Include="SolidPrinciples\SRP\Database.ts" />
     <TypeScriptCompile Include="SolidPrinciples\SRP\Task.ts" />
@@ -46,6 +47,7 @@
     <Folder Include="Scripts\" />
     <Folder Include="Scripts\typings\" />
     <Folder Include="Scripts\typings\node\" />
+    <Folder Include="SolidPrinciples\LSP\" />
     <Folder Include="SolidPrinciples\OCP\" />
     <Folder Include="SolidPrinciples\SRP\" />
   </ItemGroup>

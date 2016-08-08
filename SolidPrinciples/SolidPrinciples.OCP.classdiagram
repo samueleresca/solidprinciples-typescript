@@ -102,7 +102,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="6ff25867-d276-4f37-b255-4cab343d61f6" name="getDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="6ff25867-d276-4f37-b255-4cab343d61f6" name="monthlyDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="3e340f8f-3ef3-4f80-a89a-d1e89b6c4925" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -153,7 +153,7 @@
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="fca12baf-1bc5-4798-bf60-de071f9ad228" name="getDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="fca12baf-1bc5-4798-bf60-de071f9ad228" name="monthlyDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="918eff98-8eab-4a19-aac3-84f22ff41125" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -184,7 +184,7 @@
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="7a58f3ac-c675-4ad7-a75e-d426e566f775" name="getDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="7a58f3ac-c675-4ad7-a75e-d426e566f775" name="monthlyDiscount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="24b15e98-4d53-4648-b3b7-cebcee37ad2e" />
             <ownedParameters>
               <operationHasOwnedParameters>
