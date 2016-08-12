@@ -4,7 +4,7 @@ abstract class PostalAddress {
     Addressee: string;
     Country: string
     PostalCode: string;
-     City: string;
+    City: string;
     Street: string
     House: number;
 
@@ -36,3 +36,7 @@ class AddressWriter {
         return writer.WriteAddress();
     }
 }
+
+
+var test = new AddressWriter();
+test.PrintPostalAddress(new ItalyPostalAddress);
