@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="SolidPrinciples.DIP.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SolidPrinciples.DIP.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SolidPrinciples.DIP.classdiagram</DependentUpon>
+    </Content>
     <Content Include="SolidPrinciples.OCP.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -36,12 +43,12 @@
       <SubType>Content</SubType>
       <DependentUpon>SolidPrinciples.SRP.classdiagram</DependentUpon>
     </Content>
-    <Content Include="SolidPrinciplesLSP.classdiagram">
+    <Content Include="SolidPrinciples.LSP.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="SolidPrinciplesLSP.classdiagram.layout">
+    <Content Include="SolidPrinciples.LSP.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>SolidPrinciplesLSP.classdiagram</DependentUpon>
+      <DependentUpon>SolidPrinciples.LSP.classdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\SolidPrinciples.uml">

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="19dab16b-9121-425d-9603-d6354bfc435e" name="SolidPrinciples.DIP" linkedPackageId="64f14624-c7b3-4334-a583-404882c45ed5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="49346fd4-d4c0-4235-9618-6452738cb575" name="IWindow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d3dc41c-a65f-4658-add3-a29d3f904f14" />
+        <ownedOperations>
+          <operation Id="41a41034-5846-4f23-a074-58009241c3eb" name="open" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c56193b-33cf-4a07-9d8b-2bb1b056e78d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bcde2147-bea5-4085-8b87-13695c1fed3f" direction="Return" isUnique="false">
+                  <elementDefinition Id="7cd66280-8e41-49f3-9866-18f64c823f45" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bb7d6408-8c85-4f4c-9110-d5e0f5bcd8ef" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5346e01c-6ed8-49d7-8a7c-b18834eaed4e" name="close" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="37bbc715-800f-48fa-9d4c-dbbc59083170" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="21bfe30a-017c-498e-9d0b-b4fff701d3b4" direction="Return" isUnique="false">
+                  <elementDefinition Id="d79614d4-3df7-46bc-bb0b-2602dbf5817d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bb7d6408-8c85-4f4c-9110-d5e0f5bcd8ef" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="bb7d6408-8c85-4f4c-9110-d5e0f5bcd8ef" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="8383d065-c365-414f-a719-ea48f6b47811" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7b30863a-62b8-4639-b9bc-ba564273e8c0" name="CarWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4f2cf7f-a6d2-4c8c-8419-3a63548ce338" />
+        <suppliersInternal>
+          <interfaceRealization Id="f9487261-e6e4-4148-9a0b-c56241455a43">
+            <interfaceMoniker Id="49346fd4-d4c0-4235-9618-6452738cb575" LastKnownName="IWindow" />
+            <elementDefinition Id="261ab8cc-1f04-4623-b5ac-890946b59bac" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="99b87ee0-05d2-4ec9-9b21-df1f3b637393" name="open" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0407a4ea-a868-4c3a-9179-412925f7bae0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a26a88c3-e648-4fdf-a6f4-2f824356148e" direction="Return" isUnique="false">
+                  <elementDefinition Id="76897516-a185-410a-a10e-ee3d3f593f81" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bb7d6408-8c85-4f4c-9110-d5e0f5bcd8ef" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5bd156f3-fedb-4e4b-95de-bb56e6a23569" name="close" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c40e5608-6888-45cb-b061-f3daa8efd003" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ae68cf2f-8582-4f71-9329-f296c052191c" direction="Return" isUnique="false">
+                  <elementDefinition Id="38a7eaa6-4731-4aa8-8239-1009625767f8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bb7d6408-8c85-4f4c-9110-d5e0f5bcd8ef" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="471321b7-57b6-498a-939d-d3cb58525853" name="WindowSwitch" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dd768d61-d8b7-4b5f-846e-67c9afaf2392" />
+        <targetEnds>
+          <association Id="9f3bcf91-e7f9-47b2-93ac-8e505bcf2437" isDerived="false" sourceEndRoleName="WindowSwitch" targetEndRoleName="IWindow" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="49346fd4-d4c0-4235-9618-6452738cb575" LastKnownName="IWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93253b5c-9f2d-4e64-90c5-d822ebdf7b12" name="WindowSwitch" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="21b42c8a-72df-43d6-90b4-d60fd9e4e063" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d9299e0-8ec4-4904-a51e-f7dac23ede47" name="IWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="61196983-3f7b-48f8-9533-5adac40e7992" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="279579d6-dbd9-4cd7-8633-afd9dc48c443" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="93123abd-ea3c-4bbe-b720-4a51a8ee3d83" name="isOn" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2972420e-5407-4cb2-b594-c65738cb394e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3f7d3a1a-b799-4ce8-8adf-7d1d4d1bb22d" LastKnownName="boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="987c90c8-0a73-4b5a-9675-2f6717eec20e" name="constructor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="78df3ae2-6ac4-4e69-9f4a-ec3398a13e24" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fe9e5ecd-7916-4b47-a110-7573c1811924" name="isOn:boolean: window" direction="In" isUnique="false">
+                  <elementDefinition Id="20e5c417-5acf-474d-a858-4b4e8fce2e22" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3d7acb2b-5421-4df1-8ef2-6b87a997313c" LastKnownName="IWindow" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="db88d80d-e9a8-4580-8b59-32db672e796d" name="onPress" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab21882a-73a0-4a1d-adab-5307e6cdcef5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a12cb686-6527-4454-812a-0121dab65a2a" direction="Return" isUnique="false">
+                  <elementDefinition Id="f5c9a1a7-45da-4640-b117-9220c12fbad5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bb7d6408-8c85-4f4c-9110-d5e0f5bcd8ef" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3f7d3a1a-b799-4ce8-8adf-7d1d4d1bb22d" name="boolean" isAbstract="false" isLeaf="false" cachedFullName="boolean">
+        <elementDefinition Id="8801aabe-1dc1-4abe-91ce-86d5df613014" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3d7acb2b-5421-4df1-8ef2-6b87a997313c" name="IWindow" isAbstract="false" isLeaf="false" cachedFullName="SolidPrinciples::IWindow">
+        <elementDefinition Id="5d3dc41c-a65f-4658-add3-a29d3f904f14" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f6c7da70-e358-44e0-99b3-965d78508cc7" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="8383d065-c365-414f-a719-ea48f6b47811" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="51c16227-41ff-4a36-bc48-4833c91701e4" name="boolean" isAbstract="false" isLeaf="false" cachedFullName="boolean">
+        <elementDefinition Id="8801aabe-1dc1-4abe-91ce-86d5df613014" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39f23699-670d-44a2-b88d-7fee7dc7b3e5" name="CarWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="29d7d5bc-d504-448a-963f-fc96bc6177e4" />
+        <ownedOperationsInternal>
+          <operation Id="220e532d-d294-4f02-86ca-b1a5383cf8c6" name="open" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11dc7b47-5683-4be4-a210-07d9e9ab1ec7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d1cccbfe-f480-4eb3-a722-77e6074b6930" direction="Return" isUnique="false">
+                  <elementDefinition Id="1ad7f1f5-a54c-4c55-aab5-d4e018ce4ecd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f6c7da70-e358-44e0-99b3-965d78508cc7" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="31505641-bc51-4cd3-93e9-8a9033b2fa24" name="close" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="08dfcbd2-e081-4309-9d95-e76af7929011" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="529576d1-3d5b-458a-9f77-74df86c92346" direction="Return" isUnique="false">
+                  <elementDefinition Id="866dc013-cfd3-42e3-95aa-7eb20eb81226" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f6c7da70-e358-44e0-99b3-965d78508cc7" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c526c25b-741e-4f02-889c-b224c59d8b93" name="WindowSwitch" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0a64c7a3-769e-463c-bcd9-47657674c247" />
+        <targetEnds>
+          <association Id="21bf2a34-2250-430d-848f-641adbd4ed19" isDerived="false" sourceEndRoleName="WindowSwitch" targetEndRoleName="CarWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="39f23699-670d-44a2-b88d-7fee7dc7b3e5" LastKnownName="CarWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4ca74919-e790-4fc4-ab74-f1046d6b0086" name="WindowSwitch" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d05c9388-f235-4ab2-974e-7daeb3d81f80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e25178bd-919f-4ba4-ae3b-ab7213a01897" name="CarWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="0c04d7ce-015e-4596-96bf-64af54905917" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ffa98c3-b49e-4190-bdea-2c654f8daf66" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="20aaed46-e106-4534-a01b-b143d7a5929a" name="isOn" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="27b29851-8b4b-4cb7-86eb-a253a1c558ff" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="51c16227-41ff-4a36-bc48-4833c91701e4" LastKnownName="boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7a3c228a-c3b5-42cd-929a-affbd1cf9003" name="constructor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3dbb51b5-7148-47e3-87cc-14cea68225c9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="44a9e96f-823d-4ca1-9447-048cba0ae51e" name="isOn:boolean: window : SolidPrinciples" direction="In" isUnique="false">
+                  <elementDefinition Id="15e295c0-2a07-435b-92eb-0e44d2f3cd7f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1bf5a9d1-51fb-497e-82aa-75f25fae411a" LastKnownName="CarWindow" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="eae99d36-a436-415e-bc18-d44c6a34706b" name="onPress" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="04727fd6-a4f1-410c-998d-3abc27490fae" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="59d1c270-2f58-4015-9e1d-b85a20be0053" direction="Return" isUnique="false">
+                  <elementDefinition Id="0ad3224c-aad4-41c8-9a01-1b5310b5326b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f6c7da70-e358-44e0-99b3-965d78508cc7" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1bf5a9d1-51fb-497e-82aa-75f25fae411a" name="CarWindow" isAbstract="false" isLeaf="false" cachedFullName="SolidPrinciples::CarWindow">
+        <elementDefinition Id="c4f2cf7f-a6d2-4c8c-8419-3a63548ce338" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="64f14624-c7b3-4334-a583-404882c45ed5" name="SolidPrinciples">
+    <elementDefinition Id="8a85c5bc-e464-4f7a-8040-81dae3cc501e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a3c2c9c2-15a5-4a10-8694-510e331b4f7d">
+        <profileInstance Id="7991cb06-da16-497e-817a-856d366551c2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5c611c65-49bb-4003-adac-92afd9c95975">
+        <profileInstance Id="80368700-6cd2-4f43-8323-f638c9c0ebf1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
